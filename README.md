@@ -1,6 +1,6 @@
 <a href="https://buymeacoffee.com/abdullaherturk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
   
-# Office 365 Enterprise Automated Offline/Online Installer  
+# Office 365 Enterprise Automated Offline/Online Installer 
 
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge)
 ![Tech](https://img.shields.io/badge/Tech-Batch_&_PowerShell-blue?style=for-the-badge)
@@ -26,7 +26,9 @@ Kullanıcıların kurmak istediği mimariyi (32-bit / 64-bit) ve dili seçmesine
 
 ## ✅ Öne Çıkan Özellikler
 
-✔️ Powershell GUI arayüzü için Türkçe ve İngilizce dil desteği
+✔️ Powershell GUI arayüzü için Türkçe ve İngilizce dil desteği.
+
+✔️ Genişletilebilir dil sistemi (INI dosyaları ile)
 
 ✔️ İsteğe bağlı uygulama seçimi
 
@@ -57,11 +59,12 @@ Kullanıcıların kurmak istediği mimariyi (32-bit / 64-bit) ve dili seçmesine
 │   Office365_Install.bat
 │   autorun.inf
 └───Office
-    │   Check.bat
-    │   ico.ico
-    │   o365.ps1
-    │   setup.exe
-    └───Office365
+    ├─── Lang
+    │    Check.bat
+    │    ico.ico
+    │    o365.ps1
+    │    setup.exe
+    └─── Office365
         ├───32
         │   └───tr-TR (veya EN-US vb.)
         │       └───Office
@@ -109,7 +112,9 @@ It allows users to choose the preferred architecture (32-bit or 64-bit) and the 
 
 ## ✅ Key Features
 
-✔️ Turkish and English language support for the powershell GUI interface
+✔️ Turkish and English language support for the powershell GUI interface 
+
+✔️ Extensible language system (via INI files)
 
 ✔️ Optional application selection
 
@@ -140,11 +145,12 @@ It allows users to choose the preferred architecture (32-bit or 64-bit) and the 
 │   Office365_Install.bat
 │   autorun.inf
 └───Office
-    │   Check.bat
-    │   ico.ico
-    │   o365.ps1
-    │   setup.exe
-    └───Office365
+    ├─── Lang
+    │    Check.bat
+    │    ico.ico
+    │    o365.ps1
+    │    setup.exe
+    └─── Office365
         ├───32
         │   └───tr-TR (or en-US etc.)
         │       └───Office
