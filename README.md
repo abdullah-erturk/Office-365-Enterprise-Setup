@@ -42,7 +42,7 @@ Kullanıcıların kurmak istediği mimariyi (32-bit / 64-bit) ve dili seçmesine
 
 ✔️ 32-bit / 64-bit otomatik algılama
 
-✔️ Dil klasörünü otomatik algılama (tr-TR, en-US vb.)
+✔️ Dil klasörünü otomatik algılama (tr-TR, en-US, hu-HU  vb.)
 
 ✔️ Sessiz kurulum (silent install) seçeneği
 
@@ -112,7 +112,7 @@ It allows users to choose the preferred architecture (32-bit or 64-bit) and the 
 
 ## ✅ Key Features
 
-✔️ Turkish and English language support for the powershell GUI interface 
+✔️ Turkish, English and Hungarian language support for the powershell GUI interface 
 
 ✔️ Extensible language system (via INI files)
 
@@ -128,7 +128,7 @@ It allows users to choose the preferred architecture (32-bit or 64-bit) and the 
 
 ✔️ Automatic detection of architecture (x86 / x64)
 
-✔️ Automatic detection of language folder (e.g., tr-TR, en-US, etc.)
+✔️ Automatic detection of language folder (e.g., tr-TR, en-US, hu-HU etc.)
 
 ✔️ Clean and silent installation option
 
@@ -186,4 +186,89 @@ PowerShell 5.1 or higher
 
 </details>
 
+---
+
+<details>
+<summary><strong>Magyar leírás</strong></summary>
+
+  ## 📌 Office 365 Nagyvállalati kiadás automatizált offline/online telepítő (PowerShell szkript )
+
+Ez a PowerShell alkalmazás egy teljesen automatizált, felhasználóbarát PowerShell szkript, amely a Microsoft Office 365 telepítésére szolgál mind offline, mind online módban.
+Lehetővé teszi a felhasználók számára, hogy dinamikusan válasszák ki a preferált architektúrát (32 bites vagy 64 bites) és a telepítési nyelvet. A script automatikusan felismeri a megfelelő mappaszerkezetet, és elindít egy tiszta Office telepítést az előre letöltött telepítőfájljaival.
+
+## ✅ Fő jellemzők
+
+✔️ Török, angol és magyar nyelvi támogatás a PowerShell grafikus felületéhez 
+
+✔️ Bővíthető nyelvi rendszer (INI fájlokon keresztül)
+
+✔️ Választható alkalmazás kiválasztása
+
+✔️ Telepítési támogatás 43 különböző nyelven
+
+✔️ További termékek: Visio Pro - Project Pro
+
+✔️ Támogatja az offline telepítést bármely mappából, DVD/ISO-ról, USB-ről vagy hálózati elérési útvonalról
+
+✔️ Online és offline telepítés az Office Telepítőeszközzel
+
+✔️ Az architektúra (x86 / x64) automatikus érzékelése
+
+✔️ A nyelvi mappa automatikus felismerése (pl. tr-TR, en-US, hu-HU stb.)
+
+✔️ Tiszta és csendes telepítési lehetőség
+
+✔️ Folyamatjelző sáv telepítés közben
+
+✔️ Telepítés utáni ellenőrzés
+
+✔️ Adminisztrátori jogosultság automatikus ellenőrzése
+
+✔️ Hibakezelés és részletes naplók
+
+## 📂 Mappaszerkezet
+```
+│   Office365_Install.bat
+│   autorun.inf
+└───Office
+    ├─── Lang
+    │    Check.bat
+    │    ico.ico
+    │    o365.ps1
+    │    setup.exe
+    └─── Office365
+        ├───32
+        │   └───tr-TR (or en-US etc.)
+        │       └───Office
+        │           └───Data
+        │               │   v32.cab
+        │               │   v32_16.xxxxx.xxxxx.cab
+        │               │
+        │               └────────────────────────16.xxxxx.xxxxx
+        └───64
+            └───tr-TR (or en-US etc.)
+                └───Office
+                    └───Data
+                        │   v64.cab
+                        │   v64_16.xxxxx.xxxxx.cab
+                        │
+                        └────────────────────────16.xxxxx.xxxxx
+```
+## 🚀 Használat
+
+Futtatás rendszergazdaként. (Automatikusan rendszergazdaként fut az Office365_Install.bat fájl miatt)
+
+Válasszon nyelvet.
+
+A telepítés automatikusan elindul. (online vagy offline)
+
+## 🧩 Követelmények
+
+Windows 10 / 11 / Server (Minimum Server verzió: Windows Server 2012 R2)
+
+Rendszergazdai jogosultságok
+
+PowerShell 5.1 vagy újabb
+
+</details>
 
